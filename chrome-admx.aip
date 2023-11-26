@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<DOCUMENT Type="Advanced Installer" CreateVersion="17.8" version="18.8" Modules="architect" RootPath="." Language="en" Id="{0CFA2E65-F41D-4C7E-B7F1-A5AE0F66321B}">
+<DOCUMENT Type="Advanced Installer" CreateVersion="21.2.2" version="21.2.2" Modules="professional" RootPath="." Language="en" Id="{D65E5C85-9EF4-4A82-A208-A047A8ACDA45}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="AppXProductDetailsComponent;AppXDependenciesComponent;AppXAppDetailsComponent;AppXVisualAssetsComponent;AppXCapabilitiesComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;MsiDriverPackagesComponent;UserAccountsComponent;ScheduledTasksComponent;SqlConnectionComponent;AutorunComponent;FirewallExceptionComponent;GameUxComponent;MsiDirectEditorComponent;SharePointSlnComponent;SilverlightSlnComponent;MultipleInstancesComponent;SccmComponent;ActSyncAppComponent;CPLAppletComponent;FixupComponent;MsiXDiffComponent;MsixManifestEditorComponent"/>
+  </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
     <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
-    <ROW Property="AI_CURRENT_YEAR" Value="2021" ValueLocId="-"/>
-    <ROW Property="AI_ThemeStyle" Value="aero" MultiBuildValue="DefaultBuild:classic" MsiKey="AI_ThemeStyle"/>
     <ROW Property="ALLUSERS" Value="1"/>
     <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
     <ROW Property="ARPHELPLINK" Value="https://github.com/CreeperKong/chrome-admx"/>
-    <ROW Property="ARPNOREMOVE" Value="1"/>
-    <ROW Property="ARPNOREPAIR" Value="1"/>
-    <ROW Property="ARPPRODUCTICON" Value="shell32.exe" Type="8"/>
+    <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="ARPPRODUCTICON" Value="shell32_1.exe" Type="8"/>
     <ROW Property="ARPURLINFOABOUT" Value="https://github.com/CreeperKong/chrome-admx"/>
     <ROW Property="ARPURLUPDATEINFO" Value="https://github.com/CreeperKong/chrome-admx"/>
+    <ROW Property="LIMITUI" MultiBuildValue="DefaultBuild:1"/>
     <ROW Property="Manufacturer" Value="Packed by CreeperKong"/>
-    <ROW Property="ProductCode" Value="1033:{AF9B5318-065C-42B5-8A5B-603E04661852} " Type="16"/>
+    <ROW Property="ProductCode" Value="1033:{8EB7929D-62B1-4980-9B5A-9A65FB40E988} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="Google Chrome Group Policy Files"/>
-    <ROW Property="ProductVersion" Value="2021.11.11" Type="32"/>
+    <ROW Property="ProductVersion" Value="2023.11.27" Options="32"/>
+    <ROW Property="REBOOT" MultiBuildValue="DefaultBuild:Suppress"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
     <ROW Property="UpgradeCode" Value="{0C28358F-BD9D-43D5-9CF1-427AB6D40A07}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
@@ -30,404 +32,318 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
     <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
-    <ROW Directory="PolicyDefinations_Dir" Directory_Parent="WindowsFolder" DefaultDir="POLICY~2|PolicyDefinitions"/>
+    <ROW Directory="PolicyDefinitions_Dir" Directory_Parent="WindowsFolder" DefaultDir="POLICY~1|PolicyDefinitions"/>
     <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
     <ROW Directory="WindowsFolder" Directory_Parent="TARGETDIR" DefaultDir="WINDOW~1|WindowsFolder" IsPseudoRoot="1"/>
-    <ROW Directory="am_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="am"/>
-    <ROW Directory="ar_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="ar"/>
-    <ROW Directory="bg_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="bg"/>
-    <ROW Directory="bn_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="bn"/>
-    <ROW Directory="ca_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="ca"/>
-    <ROW Directory="cs_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="cs"/>
-    <ROW Directory="da_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="da"/>
-    <ROW Directory="deDE_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="de-DE"/>
-    <ROW Directory="de_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="de"/>
-    <ROW Directory="el_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="el"/>
-    <ROW Directory="enGB_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="en-GB"/>
-    <ROW Directory="enUS_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="en-US"/>
-    <ROW Directory="es419_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="es-419"/>
-    <ROW Directory="esES_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="es-ES"/>
-    <ROW Directory="es_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="es"/>
-    <ROW Directory="et_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="et"/>
-    <ROW Directory="fa_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="fa"/>
-    <ROW Directory="fi_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="fi"/>
-    <ROW Directory="fil_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="fil"/>
-    <ROW Directory="frFR_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="fr-FR"/>
-    <ROW Directory="fr_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="fr"/>
-    <ROW Directory="hi_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="hi"/>
-    <ROW Directory="hr_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="hr"/>
-    <ROW Directory="hu_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="hu"/>
-    <ROW Directory="idID_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="id-ID"/>
-    <ROW Directory="id_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="id"/>
-    <ROW Directory="itIT_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="it-IT"/>
-    <ROW Directory="it_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="it"/>
-    <ROW Directory="iw_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="iw"/>
-    <ROW Directory="jaJP_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="ja-JP"/>
-    <ROW Directory="ja_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="ja"/>
-    <ROW Directory="ka_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="ka"/>
-    <ROW Directory="kn_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="kn"/>
-    <ROW Directory="koKR_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="ko-KR"/>
-    <ROW Directory="ko_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="ko"/>
-    <ROW Directory="lt_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="lt"/>
-    <ROW Directory="lv_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="lv"/>
-    <ROW Directory="ml_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="ml"/>
-    <ROW Directory="mr_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="mr"/>
-    <ROW Directory="ms_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="ms"/>
-    <ROW Directory="nlNL_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="nl-NL"/>
-    <ROW Directory="nl_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="nl"/>
-    <ROW Directory="no_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="no"/>
-    <ROW Directory="pl_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="pl"/>
-    <ROW Directory="ptBR_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="pt-BR"/>
-    <ROW Directory="ptPT_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="pt-PT"/>
-    <ROW Directory="ro_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="ro"/>
-    <ROW Directory="ruRU_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="ru-RU"/>
-    <ROW Directory="ru_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="ru"/>
-    <ROW Directory="sk_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="sk"/>
-    <ROW Directory="sl_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="sl"/>
-    <ROW Directory="sr_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="sr"/>
-    <ROW Directory="sv_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="sv"/>
-    <ROW Directory="sw_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="sw"/>
-    <ROW Directory="ta_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="ta"/>
-    <ROW Directory="te_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="te"/>
-    <ROW Directory="thTH_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="th-TH"/>
-    <ROW Directory="th_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="th"/>
-    <ROW Directory="trTR_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="tr-TR"/>
-    <ROW Directory="tr_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="tr"/>
-    <ROW Directory="ukUA_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="uk-UA"/>
-    <ROW Directory="uk_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="uk"/>
-    <ROW Directory="viVN_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="vi-VN"/>
-    <ROW Directory="vi_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="vi"/>
-    <ROW Directory="zhCN_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="zh-CN"/>
-    <ROW Directory="zhTW_Dir" Directory_Parent="PolicyDefinations_Dir" DefaultDir="zh-TW"/>
+    <ROW Directory="am_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="am"/>
+    <ROW Directory="ar_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="ar"/>
+    <ROW Directory="bg_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="bg"/>
+    <ROW Directory="bn_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="bn"/>
+    <ROW Directory="ca_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="ca"/>
+    <ROW Directory="cs_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="cs"/>
+    <ROW Directory="da_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="da"/>
+    <ROW Directory="deDE_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="de-DE"/>
+    <ROW Directory="de_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="de"/>
+    <ROW Directory="el_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="el"/>
+    <ROW Directory="enGB_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="en-GB"/>
+    <ROW Directory="enUS_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="en-US"/>
+    <ROW Directory="es419_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="es-419"/>
+    <ROW Directory="esES_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="es-ES"/>
+    <ROW Directory="es_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="es"/>
+    <ROW Directory="et_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="et"/>
+    <ROW Directory="fa_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="fa"/>
+    <ROW Directory="fi_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="fi"/>
+    <ROW Directory="fil_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="fil"/>
+    <ROW Directory="frFR_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="fr-FR"/>
+    <ROW Directory="fr_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="fr"/>
+    <ROW Directory="hi_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="hi"/>
+    <ROW Directory="hr_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="hr"/>
+    <ROW Directory="hu_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="hu"/>
+    <ROW Directory="idID_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="id-ID"/>
+    <ROW Directory="id_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="id"/>
+    <ROW Directory="itIT_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="it-IT"/>
+    <ROW Directory="it_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="it"/>
+    <ROW Directory="iw_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="iw"/>
+    <ROW Directory="jaJP_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="ja-JP"/>
+    <ROW Directory="ja_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="ja"/>
+    <ROW Directory="ka_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="ka"/>
+    <ROW Directory="kn_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="kn"/>
+    <ROW Directory="koKR_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="ko-KR"/>
+    <ROW Directory="ko_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="ko"/>
+    <ROW Directory="lt_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="lt"/>
+    <ROW Directory="lv_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="lv"/>
+    <ROW Directory="ml_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="ml"/>
+    <ROW Directory="mr_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="mr"/>
+    <ROW Directory="ms_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="ms"/>
+    <ROW Directory="nlNL_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="nl-NL"/>
+    <ROW Directory="nl_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="nl"/>
+    <ROW Directory="no_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="no"/>
+    <ROW Directory="pl_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="pl"/>
+    <ROW Directory="ptBR_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="pt-BR"/>
+    <ROW Directory="ptPT_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="pt-PT"/>
+    <ROW Directory="ro_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="ro"/>
+    <ROW Directory="ruRU_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="ru-RU"/>
+    <ROW Directory="ru_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="ru"/>
+    <ROW Directory="sk_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="sk"/>
+    <ROW Directory="sl_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="sl"/>
+    <ROW Directory="sr_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="sr"/>
+    <ROW Directory="sv_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="sv"/>
+    <ROW Directory="sw_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="sw"/>
+    <ROW Directory="ta_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="ta"/>
+    <ROW Directory="te_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="te"/>
+    <ROW Directory="thTH_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="th-TH"/>
+    <ROW Directory="th_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="th"/>
+    <ROW Directory="trTR_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="tr-TR"/>
+    <ROW Directory="tr_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="tr"/>
+    <ROW Directory="ukUA_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="uk-UA"/>
+    <ROW Directory="uk_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="uk"/>
+    <ROW Directory="viVN_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="vi-VN"/>
+    <ROW Directory="vi_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="vi"/>
+    <ROW Directory="zhCN_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="zh-CN"/>
+    <ROW Directory="zhTW_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="zh-TW"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
-    <ROW Component="APPDIR" ComponentId="{76CEC033-D62D-4CB0-A125-9D7229EB0D13}" Directory_="APPDIR" Attributes="0"/>
-    <ROW Component="ChromeUASwitcher.adml" ComponentId="{60D39A9C-F3C5-492E-ACE3-E4FF6FADE976}" Directory_="enUS_Dir" Attributes="0" KeyPath="ChromeUASwitcher.adml" Type="0"/>
-    <ROW Component="ChromeUASwitcher.admx" ComponentId="{6B2ED831-CB88-4832-9F3D-4559C594C564}" Directory_="PolicyDefinations_Dir" Attributes="0" KeyPath="ChromeUASwitcher.admx" Type="0"/>
-    <ROW Component="GoogleUpdate.adml" ComponentId="{06B3451A-60E5-483C-A831-AE32A223C8CE}" Directory_="enUS_Dir" Attributes="0" KeyPath="GoogleUpdate.adml" Type="0"/>
-    <ROW Component="GoogleUpdate.admx" ComponentId="{EA64B959-3F80-4137-BA53-2062DCD2E3B2}" Directory_="PolicyDefinations_Dir" Attributes="0" KeyPath="GoogleUpdate.admx" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml" ComponentId="{F2AD31C6-DA13-4B73-B468-6565605AA23B}" Directory_="sw_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_1" ComponentId="{79E4DBE2-A51A-48FA-8AF0-C04D13A66E6A}" Directory_="ta_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_1" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_10" ComponentId="{993DD228-83A8-48D9-BB70-E7294220FF16}" Directory_="ar_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_10" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_11" ComponentId="{87210245-9AC5-40C1-87A4-B7DBDD1B1DF0}" Directory_="bg_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_11" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_12" ComponentId="{50773FAF-2DA4-4171-AA96-9CD49B29A329}" Directory_="bn_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_12" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_13" ComponentId="{EAC08761-A2F8-4C2B-9208-04C4A1F42618}" Directory_="ca_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_13" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_14" ComponentId="{D3C97F59-6E88-4FD1-A65C-2D8B309B45E3}" Directory_="cs_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_14" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_15" ComponentId="{2C64AF20-DEAD-427F-8A8B-6326F3523A11}" Directory_="da_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_15" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_16" ComponentId="{1E06D9C6-5BC9-408A-A87B-C2B0C2BD6D31}" Directory_="de_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_16" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_17" ComponentId="{CFE49657-E69B-4DAB-B169-D8B0A3264E59}" Directory_="el_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_17" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_18" ComponentId="{83CFFB30-5CC3-42CB-87D5-E46538C1F848}" Directory_="enGB_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_18" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_19" ComponentId="{E32B3381-D4EC-4DD2-ADB7-4AF170083E88}" Directory_="enUS_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_19" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_2" ComponentId="{BBCF70A0-6169-4695-BFAA-46B7D89A6EF1}" Directory_="te_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_2" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_20" ComponentId="{E5E83D65-B6A6-4311-910F-AB9B77443EF8}" Directory_="es_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_20" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_21" ComponentId="{9F5D3EC5-608A-48C4-B760-6CA92AEE6E3A}" Directory_="es419_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_21" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_22" ComponentId="{D131730C-7F0C-4ABA-B973-673C0B26DBF0}" Directory_="et_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_22" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_23" ComponentId="{A1C96E67-4978-4E6F-9BAF-5D8CAF2C170E}" Directory_="fa_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_23" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_24" ComponentId="{9502E67D-FE2C-413A-A168-8AE537335C6A}" Directory_="fi_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_24" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_25" ComponentId="{FB9D670E-BDF7-4A80-B1CA-9E6853C71244}" Directory_="fil_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_25" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_26" ComponentId="{3928FDB8-A9B1-4DE1-A708-28245038731B}" Directory_="fr_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_26" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_27" ComponentId="{64D64E44-5A8D-4A2F-A516-62767D9C2122}" Directory_="hi_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_27" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_28" ComponentId="{34F0FD69-D191-403A-9457-F1B83D27FBFC}" Directory_="hr_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_28" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_29" ComponentId="{73DAD263-1237-4950-91B3-4EAEC2D3687D}" Directory_="hu_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_29" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_3" ComponentId="{B314689D-2565-4611-9707-6F86DCD1FAB7}" Directory_="th_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_3" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_30" ComponentId="{B07AB94A-F8F6-43EC-BE99-31DF8D996438}" Directory_="id_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_30" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_31" ComponentId="{13539500-1973-4BC2-AA31-37EADAD28446}" Directory_="it_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_31" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_32" ComponentId="{9E911511-9DB2-4BA9-82C0-F5A87CDF0F65}" Directory_="iw_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_32" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_33" ComponentId="{52B09FE6-C24C-4FFE-884C-585F09914A16}" Directory_="ja_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_33" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_34" ComponentId="{136CAD32-5DAA-4F93-941F-3109A4D29D61}" Directory_="ka_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_34" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_35" ComponentId="{12F405D6-9658-4D48-971B-B9945E530DAF}" Directory_="kn_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_35" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_36" ComponentId="{10798456-7550-4E8C-B2A8-F7AF94E4FF1F}" Directory_="ko_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_36" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_37" ComponentId="{B647687D-BC62-42B3-8AD2-F369A1AAF86D}" Directory_="lt_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_37" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_38" ComponentId="{500C72BA-EABA-4689-AFE2-C5512BC8837B}" Directory_="lv_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_38" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_39" ComponentId="{C6349B97-A741-48FA-BC66-08D2F459987A}" Directory_="ml_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_39" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_4" ComponentId="{ED59A49A-72B1-44A4-B499-64E9D8F4A2BF}" Directory_="tr_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_4" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_40" ComponentId="{C1733A33-D872-4BFE-8651-3740720C85D2}" Directory_="mr_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_40" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_41" ComponentId="{A357BE96-C28E-4F6F-A611-87656A16D6CF}" Directory_="ms_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_41" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_42" ComponentId="{0751BD73-1D4F-4D8C-A7FD-CE8646F8CB41}" Directory_="nl_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_42" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_43" ComponentId="{994698B3-9D6C-488F-9327-290DF25883D0}" Directory_="no_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_43" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_44" ComponentId="{32C59911-36BF-415F-8E04-97AB5BAE54CD}" Directory_="pl_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_44" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_45" ComponentId="{252BAF8F-F7FB-4E1C-A50C-9F508D342B5F}" Directory_="ptBR_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_45" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_46" ComponentId="{26A46C59-2891-496A-A2A1-E19293DE8684}" Directory_="ptPT_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_46" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_47" ComponentId="{F84A1CE5-9E3E-4309-8743-39A22C3DB27D}" Directory_="ro_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_47" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_48" ComponentId="{B14D898E-616A-412C-8246-8AB2C90FCC15}" Directory_="ru_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_48" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_49" ComponentId="{679CE83C-B622-42B6-B9A4-6C112EBD75BE}" Directory_="sk_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_49" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_5" ComponentId="{1BDA0AE6-36EA-4453-801F-DF95251FAB55}" Directory_="uk_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_5" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_50" ComponentId="{31C110CC-AAB6-454A-9C12-2ECF27A26E23}" Directory_="sl_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_50" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_51" ComponentId="{F7A31162-F48D-44E3-AE93-4038FE3DE2C1}" Directory_="sr_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_51" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_52" ComponentId="{B59350B2-A6C7-414F-BC4C-D5B13130046F}" Directory_="sv_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_52" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_6" ComponentId="{24B197EE-7C4C-45F8-B9F1-86FB7A895B9A}" Directory_="vi_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_6" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_7" ComponentId="{D7EE8EF5-D06F-4857-AA3C-C9A265E3B42F}" Directory_="zhCN_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_7" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_8" ComponentId="{DC1D4FC1-BEA3-4E42-889C-D37E5077ABC6}" Directory_="zhTW_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_8" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.adml_9" ComponentId="{326B3900-EF4E-479F-BE97-C4AA9E81BB08}" Directory_="am_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.adml_9" Type="0"/>
-    <ROW Component="LegacyBrowserSupport.admx" ComponentId="{1C96E40B-CDA8-46BA-A1D0-813BA29CEF26}" Directory_="PolicyDefinations_Dir" Attributes="0" KeyPath="LegacyBrowserSupport.admx" Type="0"/>
-    <ROW Component="PasswordAlert.adml" ComponentId="{659B21DE-2FEB-492E-AC74-FE8DF3419E1D}" Directory_="enUS_Dir" Attributes="0" KeyPath="PasswordAlert.adml" Type="0"/>
-    <ROW Component="PasswordAlert.admx" ComponentId="{FCA022DE-AF93-4CDC-B6BB-7CDF3C7A93E6}" Directory_="PolicyDefinations_Dir" Attributes="0" KeyPath="PasswordAlert.admx" Type="0"/>
-    <ROW Component="ProductInformation" ComponentId="{54B97EE5-BBF6-49E9-986E-5541ED3B1B8B}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
-    <ROW Component="chrome.adml" ComponentId="{A85DD67D-4607-44BB-8496-4EF4BF224BE8}" Directory_="koKR_Dir" Attributes="0" KeyPath="chrome.adml" Type="0"/>
-    <ROW Component="chrome.adml_18" ComponentId="{2D03AFF1-0BAA-4DD0-BF7C-8FC98F93F9A8}" Directory_="nlNL_Dir" Attributes="0" KeyPath="chrome.adml_18" Type="0"/>
-    <ROW Component="chrome.adml_19" ComponentId="{11F520CE-CCA4-40FA-9F3D-E6E03D62E115}" Directory_="ptBR_Dir" Attributes="0" KeyPath="chrome.adml_19" Type="0"/>
-    <ROW Component="chrome.adml_20" ComponentId="{FDA7C33D-A231-436A-AC3F-9DA0BB6FDBCB}" Directory_="ruRU_Dir" Attributes="0" KeyPath="chrome.adml_20" Type="0"/>
-    <ROW Component="chrome.adml_21" ComponentId="{0621A860-27D3-405F-A05D-5CD8C0A0DB82}" Directory_="thTH_Dir" Attributes="0" KeyPath="chrome.adml_21" Type="0"/>
-    <ROW Component="chrome.adml_22" ComponentId="{5D0F55DE-1D8E-4550-8A19-D11EFD1EF1A9}" Directory_="trTR_Dir" Attributes="0" KeyPath="chrome.adml_22" Type="0"/>
-    <ROW Component="chrome.adml_23" ComponentId="{A21325B7-0878-4FC9-9C6E-B38BA127264C}" Directory_="ukUA_Dir" Attributes="0" KeyPath="chrome.adml_23" Type="0"/>
-    <ROW Component="chrome.adml_24" ComponentId="{5B95BFFF-CA47-4099-AC24-35768D0AE7FA}" Directory_="viVN_Dir" Attributes="0" KeyPath="chrome.adml_24" Type="0"/>
-    <ROW Component="chrome.adml_25" ComponentId="{ACC52E8A-EC77-47E5-838E-63C61E567147}" Directory_="zhCN_Dir" Attributes="0" KeyPath="chrome.adml_25" Type="0"/>
-    <ROW Component="chrome.adml_26" ComponentId="{B077352A-10E6-4C83-AE13-E26BB9B19803}" Directory_="zhTW_Dir" Attributes="0" KeyPath="chrome.adml_26" Type="0"/>
-    <ROW Component="chrome.adml_27" ComponentId="{1830AA09-308D-4028-8A3D-A4B9B314E743}" Directory_="deDE_Dir" Attributes="0" KeyPath="chrome.adml_27" Type="0"/>
-    <ROW Component="chrome.adml_28" ComponentId="{7F1BF91F-8A94-4E5B-B381-8B11FC9C9D0E}" Directory_="enUS_Dir" Attributes="0" KeyPath="chrome.adml_28" Type="0"/>
-    <ROW Component="chrome.adml_29" ComponentId="{8D238771-593E-4730-B325-F94D53A15D95}" Directory_="es419_Dir" Attributes="0" KeyPath="chrome.adml_29" Type="0"/>
-    <ROW Component="chrome.adml_30" ComponentId="{69B73417-0C46-4ED8-ADE4-B15F48E5E496}" Directory_="esES_Dir" Attributes="0" KeyPath="chrome.adml_30" Type="0"/>
-    <ROW Component="chrome.adml_31" ComponentId="{9A59E96A-584E-499E-B766-2FAA652BB601}" Directory_="frFR_Dir" Attributes="0" KeyPath="chrome.adml_31" Type="0"/>
-    <ROW Component="chrome.adml_32" ComponentId="{C03DE95A-AC52-47B4-87C8-A0440C20824A}" Directory_="idID_Dir" Attributes="0" KeyPath="chrome.adml_32" Type="0"/>
-    <ROW Component="chrome.adml_33" ComponentId="{A30D0B9F-46C6-43BC-A93C-3FEDD675A531}" Directory_="itIT_Dir" Attributes="0" KeyPath="chrome.adml_33" Type="0"/>
-    <ROW Component="chrome.adml_34" ComponentId="{4AC647DD-9480-4DD6-A5BC-785E74C774B3}" Directory_="jaJP_Dir" Attributes="0" KeyPath="chrome.adml_34" Type="0"/>
-    <ROW Component="chrome.admx" ComponentId="{F20B7619-DFFA-4855-AA76-119A61B5AABC}" Directory_="PolicyDefinations_Dir" Attributes="0" KeyPath="chrome.admx" Type="0"/>
-    <ROW Component="google.adml" ComponentId="{57121CED-4CB4-4EB8-A4D6-CB878D19C73F}" Directory_="koKR_Dir" Attributes="0" KeyPath="google.adml" Type="0"/>
-    <ROW Component="google.adml_1" ComponentId="{0282E5B7-5902-4FE7-8A57-C4A9A86F2F31}" Directory_="nlNL_Dir" Attributes="0" KeyPath="google.adml_18" Type="0"/>
-    <ROW Component="google.adml_10" ComponentId="{905F17D2-12BE-4070-995D-ABEE13213BD1}" Directory_="deDE_Dir" Attributes="0" KeyPath="google.adml_27" Type="0"/>
-    <ROW Component="google.adml_11" ComponentId="{9D0BBBE7-E5FD-47A7-BD56-5E99549309E4}" Directory_="enUS_Dir" Attributes="0" KeyPath="google.adml_28" Type="0"/>
-    <ROW Component="google.adml_12" ComponentId="{252D45E7-904D-40F0-8878-20E2F9EA1227}" Directory_="es419_Dir" Attributes="0" KeyPath="google.adml_29" Type="0"/>
-    <ROW Component="google.adml_13" ComponentId="{AB3839A8-EBE0-4A37-B2F4-967610B542C8}" Directory_="esES_Dir" Attributes="0" KeyPath="google.adml_30" Type="0"/>
-    <ROW Component="google.adml_14" ComponentId="{BEA04FB4-3C9C-40B4-9ED5-6B54B2465407}" Directory_="frFR_Dir" Attributes="0" KeyPath="google.adml_31" Type="0"/>
-    <ROW Component="google.adml_15" ComponentId="{A7CBA841-507B-4663-9E8B-5F33ED7D334E}" Directory_="idID_Dir" Attributes="0" KeyPath="google.adml_32" Type="0"/>
-    <ROW Component="google.adml_16" ComponentId="{8E3DF942-83DF-4B88-B58C-07EAB406BF87}" Directory_="itIT_Dir" Attributes="0" KeyPath="google.adml_33" Type="0"/>
-    <ROW Component="google.adml_17" ComponentId="{D702EF0C-D40E-48A9-A207-EE17D9A4714F}" Directory_="jaJP_Dir" Attributes="0" KeyPath="google.adml_34" Type="0"/>
-    <ROW Component="google.adml_18" ComponentId="{50A43EAD-192A-4A69-A3D6-74D868986833}" Directory_="ca_Dir" Attributes="0" KeyPath="google.adml_1" Type="0"/>
-    <ROW Component="google.adml_19" ComponentId="{85CA727A-1624-4634-96BF-8FF68AFB36C1}" Directory_="cs_Dir" Attributes="0" KeyPath="google.adml_2" Type="0"/>
-    <ROW Component="google.adml_2" ComponentId="{3548A5DD-D565-499E-883B-98E5141DBDFD}" Directory_="ptBR_Dir" Attributes="0" KeyPath="google.adml_19" Type="0"/>
-    <ROW Component="google.adml_20" ComponentId="{B3B5E97E-BD1B-4A91-B61F-C7DABEBFCA16}" Directory_="da_Dir" Attributes="0" KeyPath="google.adml_3" Type="0"/>
-    <ROW Component="google.adml_21" ComponentId="{6DE77A94-4047-4510-A3DE-73752D481FC4}" Directory_="de_Dir" Attributes="0" KeyPath="google.adml_4" Type="0"/>
-    <ROW Component="google.adml_22" ComponentId="{D070FCAC-9978-460B-AF49-2B09EAEFAE70}" Directory_="el_Dir" Attributes="0" KeyPath="google.adml_5" Type="0"/>
-    <ROW Component="google.adml_23" ComponentId="{D8EFD9A8-8954-4445-9E83-091B40B30023}" Directory_="enGB_Dir" Attributes="0" KeyPath="google.adml_6" Type="0"/>
-    <ROW Component="google.adml_24" ComponentId="{8DC91F8D-2441-4F44-9F77-6F2243B1BC5F}" Directory_="es_Dir" Attributes="0" KeyPath="google.adml_7" Type="0"/>
-    <ROW Component="google.adml_25" ComponentId="{57B05038-2D34-429F-9F42-ABD76425A68D}" Directory_="et_Dir" Attributes="0" KeyPath="google.adml_8" Type="0"/>
-    <ROW Component="google.adml_26" ComponentId="{BAAE8F8C-F607-4EE6-9124-85E241CB7312}" Directory_="fa_Dir" Attributes="0" KeyPath="google.adml_9" Type="0"/>
-    <ROW Component="google.adml_27" ComponentId="{3264D962-42F9-47E1-A3B5-5784F43DA900}" Directory_="fi_Dir" Attributes="0" KeyPath="google.adml_10" Type="0"/>
-    <ROW Component="google.adml_28" ComponentId="{FF641B3A-DEBD-4F36-90D7-CB7105B801EB}" Directory_="fil_Dir" Attributes="0" KeyPath="google.adml_11" Type="0"/>
-    <ROW Component="google.adml_29" ComponentId="{A0D47525-A385-44DF-ADA1-2E2271E9D22D}" Directory_="fr_Dir" Attributes="0" KeyPath="google.adml_12" Type="0"/>
-    <ROW Component="google.adml_3" ComponentId="{306BF21A-05BB-40CD-B0D8-9B14C1E6B4E0}" Directory_="ruRU_Dir" Attributes="0" KeyPath="google.adml_20" Type="0"/>
-    <ROW Component="google.adml_30" ComponentId="{6E0EEA71-6CAE-4F31-B52A-1BD433A583DA}" Directory_="hi_Dir" Attributes="0" KeyPath="google.adml_13" Type="0"/>
-    <ROW Component="google.adml_31" ComponentId="{29E4A174-31B7-44BD-8182-24A12049AB91}" Directory_="hr_Dir" Attributes="0" KeyPath="google.adml_14" Type="0"/>
-    <ROW Component="google.adml_32" ComponentId="{EE2C0EA7-F9DD-4795-A27A-DC9781C18001}" Directory_="hu_Dir" Attributes="0" KeyPath="google.adml_15" Type="0"/>
-    <ROW Component="google.adml_33" ComponentId="{D006CF4E-95CF-4D6E-8ABC-D538D5C3F0B6}" Directory_="id_Dir" Attributes="0" KeyPath="google.adml_16" Type="0"/>
-    <ROW Component="google.adml_34" ComponentId="{B7BF3F83-870C-4DA0-9173-8B9E2294E69E}" Directory_="it_Dir" Attributes="0" KeyPath="google.adml_17" Type="0"/>
-    <ROW Component="google.adml_35" ComponentId="{5F554B8D-29BE-44F9-B7B9-2E3A503241B9}" Directory_="iw_Dir" Attributes="0" KeyPath="google.adml_35" Type="0"/>
-    <ROW Component="google.adml_36" ComponentId="{CF85958B-E1D8-465D-A026-31D13957F277}" Directory_="ja_Dir" Attributes="0" KeyPath="google.adml_36" Type="0"/>
-    <ROW Component="google.adml_37" ComponentId="{20D13514-CC08-46FD-8692-1758DC9907CC}" Directory_="ka_Dir" Attributes="0" KeyPath="google.adml_37" Type="0"/>
-    <ROW Component="google.adml_38" ComponentId="{184041C0-85C5-453A-ABEA-8106D6409977}" Directory_="kn_Dir" Attributes="0" KeyPath="google.adml_38" Type="0"/>
-    <ROW Component="google.adml_39" ComponentId="{87A798B5-3814-48BF-96C2-1DF67503FF34}" Directory_="ko_Dir" Attributes="0" KeyPath="google.adml_39" Type="0"/>
-    <ROW Component="google.adml_4" ComponentId="{859D3025-D1AD-4B64-B335-269D506B15CE}" Directory_="thTH_Dir" Attributes="0" KeyPath="google.adml_21" Type="0"/>
-    <ROW Component="google.adml_40" ComponentId="{703C3477-CFFE-4F4A-8675-6466F0507C9B}" Directory_="lt_Dir" Attributes="0" KeyPath="google.adml_40" Type="0"/>
-    <ROW Component="google.adml_41" ComponentId="{366D48D3-27A9-4384-902C-50E52B58E6FC}" Directory_="lv_Dir" Attributes="0" KeyPath="google.adml_41" Type="0"/>
-    <ROW Component="google.adml_42" ComponentId="{0DFA1921-C5EF-440D-952F-745775CBDEB7}" Directory_="ml_Dir" Attributes="0" KeyPath="google.adml_42" Type="0"/>
-    <ROW Component="google.adml_43" ComponentId="{C8E801C9-80E0-4E58-9861-DDDCF51462B4}" Directory_="mr_Dir" Attributes="0" KeyPath="google.adml_43" Type="0"/>
-    <ROW Component="google.adml_44" ComponentId="{BE047CE9-C14B-4E64-A344-0155AE2CA500}" Directory_="ms_Dir" Attributes="0" KeyPath="google.adml_44" Type="0"/>
-    <ROW Component="google.adml_45" ComponentId="{CB6A5BCF-BCC7-4B3C-B36B-D9C0C8F5ACFF}" Directory_="nl_Dir" Attributes="0" KeyPath="google.adml_45" Type="0"/>
-    <ROW Component="google.adml_46" ComponentId="{80DDCB51-0498-449A-925A-B42584D9A8B5}" Directory_="no_Dir" Attributes="0" KeyPath="google.adml_46" Type="0"/>
-    <ROW Component="google.adml_47" ComponentId="{19DC508E-67BD-426B-891D-A25E2D1A6841}" Directory_="pl_Dir" Attributes="0" KeyPath="google.adml_47" Type="0"/>
-    <ROW Component="google.adml_48" ComponentId="{7A05642E-8F81-4769-9243-B6FB7E5B01DB}" Directory_="ptPT_Dir" Attributes="0" KeyPath="google.adml_48" Type="0"/>
-    <ROW Component="google.adml_49" ComponentId="{B7A46FCC-97F0-4D54-8BA0-76DEE07A4DB8}" Directory_="ro_Dir" Attributes="0" KeyPath="google.adml_49" Type="0"/>
-    <ROW Component="google.adml_5" ComponentId="{7AD189FC-25B2-4B2C-AC44-3CDC672AFE46}" Directory_="trTR_Dir" Attributes="0" KeyPath="google.adml_22" Type="0"/>
-    <ROW Component="google.adml_50" ComponentId="{886666CF-E9E9-400C-A1A8-00E8326B7302}" Directory_="ru_Dir" Attributes="0" KeyPath="google.adml_50" Type="0"/>
-    <ROW Component="google.adml_51" ComponentId="{97EF76D1-84AA-4D1B-B1A7-538F35FD2E3B}" Directory_="sk_Dir" Attributes="0" KeyPath="google.adml_51" Type="0"/>
-    <ROW Component="google.adml_52" ComponentId="{ECD5E7CE-41A8-42C5-A4CC-41CB07A8EE74}" Directory_="sl_Dir" Attributes="0" KeyPath="google.adml_52" Type="0"/>
-    <ROW Component="google.adml_53" ComponentId="{9AA6EC47-B279-45EA-AF3F-F1029E961B5F}" Directory_="sr_Dir" Attributes="0" KeyPath="google.adml_53" Type="0"/>
-    <ROW Component="google.adml_54" ComponentId="{00868F05-89FA-43AF-9887-E8131F9449F2}" Directory_="sv_Dir" Attributes="0" KeyPath="google.adml_54" Type="0"/>
-    <ROW Component="google.adml_55" ComponentId="{AC398209-B71A-4AA4-976F-FA39F2C46C93}" Directory_="sw_Dir" Attributes="0" KeyPath="google.adml_55" Type="0"/>
-    <ROW Component="google.adml_56" ComponentId="{1C1B05B8-075A-4510-895D-5E1FE477E717}" Directory_="ta_Dir" Attributes="0" KeyPath="google.adml_56" Type="0"/>
-    <ROW Component="google.adml_57" ComponentId="{0A14B4D8-A431-4CF7-89E4-623B58A2D9FA}" Directory_="te_Dir" Attributes="0" KeyPath="google.adml_57" Type="0"/>
-    <ROW Component="google.adml_58" ComponentId="{FB0DF4D7-BD53-4800-8C3D-9EBA1E9AA304}" Directory_="th_Dir" Attributes="0" KeyPath="google.adml_58" Type="0"/>
-    <ROW Component="google.adml_59" ComponentId="{7202610C-4DDF-4805-87B9-2A5514B858B4}" Directory_="tr_Dir" Attributes="0" KeyPath="google.adml_59" Type="0"/>
-    <ROW Component="google.adml_6" ComponentId="{217B5D8D-187D-47E5-A63B-5FA62ECCE193}" Directory_="ukUA_Dir" Attributes="0" KeyPath="google.adml_23" Type="0"/>
-    <ROW Component="google.adml_60" ComponentId="{0A9B1F78-3DA1-4400-992D-099CB5585B9E}" Directory_="uk_Dir" Attributes="0" KeyPath="google.adml_60" Type="0"/>
-    <ROW Component="google.adml_61" ComponentId="{C60026E1-FCC0-46EF-AF34-B0D655F9F8A8}" Directory_="vi_Dir" Attributes="0" KeyPath="google.adml_61" Type="0"/>
-    <ROW Component="google.adml_62" ComponentId="{8C7AD58C-4FAF-4F60-A69F-B7DE46FC0DDF}" Directory_="am_Dir" Attributes="0" KeyPath="google.adml_62" Type="0"/>
-    <ROW Component="google.adml_63" ComponentId="{37BD4470-942A-4D8E-816B-50C4766B229E}" Directory_="ar_Dir" Attributes="0" KeyPath="google.adml_63" Type="0"/>
-    <ROW Component="google.adml_64" ComponentId="{8B53F4D6-691B-4F31-8B82-03D1BFADCEEF}" Directory_="bg_Dir" Attributes="0" KeyPath="google.adml_64" Type="0"/>
-    <ROW Component="google.adml_65" ComponentId="{7632F55E-F7A3-4367-9EF8-8583F845F729}" Directory_="bn_Dir" Attributes="0" KeyPath="google.adml_65" Type="0"/>
-    <ROW Component="google.adml_7" ComponentId="{FE92F6A7-8EB8-481A-BC4F-B046A9C312BA}" Directory_="viVN_Dir" Attributes="0" KeyPath="google.adml_24" Type="0"/>
-    <ROW Component="google.adml_8" ComponentId="{3855D56D-7D44-4A76-B755-50F81D6DD62A}" Directory_="zhCN_Dir" Attributes="0" KeyPath="google.adml_25" Type="0"/>
-    <ROW Component="google.adml_9" ComponentId="{682B2C60-2CE1-418D-8829-076F8446DD31}" Directory_="zhTW_Dir" Attributes="0" KeyPath="google.adml_26" Type="0"/>
-    <ROW Component="google.admx" ComponentId="{FBEE9BE2-AE7D-4273-9C87-A51E6796B5DF}" Directory_="PolicyDefinations_Dir" Attributes="0" KeyPath="google.admx" Type="0"/>
+    <ROW Component="APPDIR" ComponentId="{3F733E75-9B9D-409C-8E06-2047891F4CC8}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="ProductInformation" ComponentId="{E9FAAE23-A38D-48D8-925A-E1D9C84252CD}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="chrome.adml" ComponentId="{05F11AEB-D5AD-42BF-A6BB-A8C5752D35CC}" Directory_="deDE_Dir" Attributes="0" KeyPath="chrome.adml" Type="0"/>
+    <ROW Component="chrome.adml_1" ComponentId="{EE38079E-6A4E-4747-B26D-5D9BD8797D2E}" Directory_="enUS_Dir" Attributes="0" KeyPath="chrome.adml_1" Type="0"/>
+    <ROW Component="chrome.adml_10" ComponentId="{62D6020B-A6BD-4E34-95F9-C9C49D2D8F94}" Directory_="ptBR_Dir" Attributes="0" KeyPath="chrome.adml_10" Type="0"/>
+    <ROW Component="chrome.adml_11" ComponentId="{942C72FD-A5AA-4BE5-8401-6D055388599F}" Directory_="ruRU_Dir" Attributes="0" KeyPath="chrome.adml_11" Type="0"/>
+    <ROW Component="chrome.adml_12" ComponentId="{8CD49880-ECB6-4EDA-BF05-308A18166AEA}" Directory_="thTH_Dir" Attributes="0" KeyPath="chrome.adml_12" Type="0"/>
+    <ROW Component="chrome.adml_13" ComponentId="{C0B880F8-2DAE-4865-AAB7-473DDF6F66D0}" Directory_="trTR_Dir" Attributes="0" KeyPath="chrome.adml_13" Type="0"/>
+    <ROW Component="chrome.adml_14" ComponentId="{5BE62F96-1B9C-471F-B2BB-F8F2D5B3EEC8}" Directory_="ukUA_Dir" Attributes="0" KeyPath="chrome.adml_14" Type="0"/>
+    <ROW Component="chrome.adml_15" ComponentId="{19979D79-06F7-4788-A078-0C93E0FF7096}" Directory_="viVN_Dir" Attributes="0" KeyPath="chrome.adml_15" Type="0"/>
+    <ROW Component="chrome.adml_16" ComponentId="{DE4C84CC-4ED2-48A6-939D-99B39ADAB606}" Directory_="zhCN_Dir" Attributes="0" KeyPath="chrome.adml_16" Type="0"/>
+    <ROW Component="chrome.adml_17" ComponentId="{028E8406-828A-47AA-8866-957B7B25BD62}" Directory_="zhTW_Dir" Attributes="0" KeyPath="chrome.adml_17" Type="0"/>
+    <ROW Component="chrome.adml_2" ComponentId="{D7ADA47C-31D7-454F-BD12-1F1C6D23A889}" Directory_="es419_Dir" Attributes="0" KeyPath="chrome.adml_2" Type="0"/>
+    <ROW Component="chrome.adml_3" ComponentId="{3941BF8C-35AD-40FC-B0F0-7DF0BA5287D9}" Directory_="esES_Dir" Attributes="0" KeyPath="chrome.adml_3" Type="0"/>
+    <ROW Component="chrome.adml_4" ComponentId="{E271DC0C-A7C5-499F-9309-C2D0E45900A2}" Directory_="frFR_Dir" Attributes="0" KeyPath="chrome.adml_4" Type="0"/>
+    <ROW Component="chrome.adml_5" ComponentId="{F6058814-D17F-48FE-986A-FE025CB31987}" Directory_="idID_Dir" Attributes="0" KeyPath="chrome.adml_5" Type="0"/>
+    <ROW Component="chrome.adml_6" ComponentId="{71651AE4-612D-4917-8FA5-104FF03D8487}" Directory_="itIT_Dir" Attributes="0" KeyPath="chrome.adml_6" Type="0"/>
+    <ROW Component="chrome.adml_7" ComponentId="{D5F6F46A-5107-4999-BBBB-C7BAD29CD371}" Directory_="jaJP_Dir" Attributes="0" KeyPath="chrome.adml_7" Type="0"/>
+    <ROW Component="chrome.adml_8" ComponentId="{4DBFEF7B-C042-4AD1-AFD5-00E44935053E}" Directory_="koKR_Dir" Attributes="0" KeyPath="chrome.adml_8" Type="0"/>
+    <ROW Component="chrome.adml_9" ComponentId="{0F653DEA-B1ED-4AD6-ADCE-29C655FF9CF1}" Directory_="nlNL_Dir" Attributes="0" KeyPath="chrome.adml_9" Type="0"/>
+    <ROW Component="chrome.admx" ComponentId="{C884394B-AE82-47B6-AB03-9EB4B3152342}" Directory_="PolicyDefinitions_Dir" Attributes="0" KeyPath="chrome.admx" Type="0"/>
+    <ROW Component="google.adml" ComponentId="{5C07CF51-A7D8-4201-B5EF-39D7893AD76A}" Directory_="bg_Dir" Attributes="0" KeyPath="google.adml" Type="0"/>
+    <ROW Component="google.adml_1" ComponentId="{00018010-883A-43BF-9BEF-774B4304D97F}" Directory_="bn_Dir" Attributes="0" KeyPath="google.adml_1" Type="0"/>
+    <ROW Component="google.adml_10" ComponentId="{E6577AA7-52DD-4D6E-87B2-E8B8DFAE8B5C}" Directory_="fa_Dir" Attributes="0" KeyPath="google.adml_14" Type="0"/>
+    <ROW Component="google.adml_11" ComponentId="{28315643-17DD-4FE4-9063-D4265180E207}" Directory_="fi_Dir" Attributes="0" KeyPath="google.adml_15" Type="0"/>
+    <ROW Component="google.adml_12" ComponentId="{7889D029-5771-4BF1-8103-33E35798A3C7}" Directory_="fil_Dir" Attributes="0" KeyPath="google.adml_16" Type="0"/>
+    <ROW Component="google.adml_13" ComponentId="{6C7B9827-6019-4DA3-9433-86DE42645F34}" Directory_="fr_Dir" Attributes="0" KeyPath="google.adml_17" Type="0"/>
+    <ROW Component="google.adml_14" ComponentId="{5F5A77C4-5581-4D67-B4B7-BB31B198F660}" Directory_="hi_Dir" Attributes="0" KeyPath="google.adml_19" Type="0"/>
+    <ROW Component="google.adml_15" ComponentId="{4A937609-330B-4CCF-BBBB-AE9F0DEC863C}" Directory_="hr_Dir" Attributes="0" KeyPath="google.adml_20" Type="0"/>
+    <ROW Component="google.adml_16" ComponentId="{F0BC5640-0B23-4595-A74E-3E6D16DDC013}" Directory_="hu_Dir" Attributes="0" KeyPath="google.adml_21" Type="0"/>
+    <ROW Component="google.adml_17" ComponentId="{7C7F0181-7A9A-4829-BF0F-BF575B772F26}" Directory_="id_Dir" Attributes="0" KeyPath="google.adml_22" Type="0"/>
+    <ROW Component="google.adml_18" ComponentId="{50D57111-B933-4D3C-9AF3-43F86E670D53}" Directory_="it_Dir" Attributes="0" KeyPath="google.adml_24" Type="0"/>
+    <ROW Component="google.adml_19" ComponentId="{3D4D292E-FC63-4C32-A2E5-7194CC888A81}" Directory_="iw_Dir" Attributes="0" KeyPath="google.adml_26" Type="0"/>
+    <ROW Component="google.adml_2" ComponentId="{9479F4AF-BE72-4111-9D31-03117766608A}" Directory_="ca_Dir" Attributes="0" KeyPath="google.adml_2" Type="0"/>
+    <ROW Component="google.adml_20" ComponentId="{BECF3A19-045D-470C-BEF4-FB097C969746}" Directory_="ja_Dir" Attributes="0" KeyPath="google.adml_27" Type="0"/>
+    <ROW Component="google.adml_21" ComponentId="{F474BD83-3710-438E-8576-1C31E748D9BD}" Directory_="ka_Dir" Attributes="0" KeyPath="google.adml_29" Type="0"/>
+    <ROW Component="google.adml_22" ComponentId="{9A441DA6-D093-496B-8027-4466B716FFDA}" Directory_="kn_Dir" Attributes="0" KeyPath="google.adml_30" Type="0"/>
+    <ROW Component="google.adml_23" ComponentId="{F6C9A88B-937E-47B1-8391-7447093D3AB2}" Directory_="ko_Dir" Attributes="0" KeyPath="google.adml_31" Type="0"/>
+    <ROW Component="google.adml_24" ComponentId="{3BCA47EC-2AEB-4A15-91E1-D22CEA6F1C80}" Directory_="lt_Dir" Attributes="0" KeyPath="google.adml_33" Type="0"/>
+    <ROW Component="google.adml_25" ComponentId="{3F5C868C-5F8A-4C0F-AAA6-4372A3934B04}" Directory_="lv_Dir" Attributes="0" KeyPath="google.adml_34" Type="0"/>
+    <ROW Component="google.adml_26" ComponentId="{664A22CC-7B26-4714-94DA-C1887A094E3D}" Directory_="ml_Dir" Attributes="0" KeyPath="google.adml_35" Type="0"/>
+    <ROW Component="google.adml_27" ComponentId="{1BD66457-34B8-4A76-B816-496A92F2FE89}" Directory_="mr_Dir" Attributes="0" KeyPath="google.adml_36" Type="0"/>
+    <ROW Component="google.adml_28" ComponentId="{82B42709-72A1-4FE7-A74F-355CC9DB05B9}" Directory_="ms_Dir" Attributes="0" KeyPath="google.adml_37" Type="0"/>
+    <ROW Component="google.adml_29" ComponentId="{9E65E1D4-C3C9-462A-98AB-B03337A5C552}" Directory_="nl_Dir" Attributes="0" KeyPath="google.adml_38" Type="0"/>
+    <ROW Component="google.adml_3" ComponentId="{2E837CD0-1304-4D74-A855-C2CE56CC1E39}" Directory_="cs_Dir" Attributes="0" KeyPath="google.adml_3" Type="0"/>
+    <ROW Component="google.adml_30" ComponentId="{D94BB5C8-ADF1-4039-A05B-D1FDF625F517}" Directory_="no_Dir" Attributes="0" KeyPath="google.adml_40" Type="0"/>
+    <ROW Component="google.adml_31" ComponentId="{C40F6602-1D50-4271-8B26-995D859F64AC}" Directory_="pl_Dir" Attributes="0" KeyPath="google.adml_41" Type="0"/>
+    <ROW Component="google.adml_32" ComponentId="{9942A17F-2FDA-427C-9633-CBE5F0D87DBD}" Directory_="ptPT_Dir" Attributes="0" KeyPath="google.adml_43" Type="0"/>
+    <ROW Component="google.adml_33" ComponentId="{0282DEBC-7BA4-464B-B25F-4E6F063C8AB4}" Directory_="ro_Dir" Attributes="0" KeyPath="google.adml_44" Type="0"/>
+    <ROW Component="google.adml_34" ComponentId="{FE162736-3B8F-4CBC-B417-3D91F286909A}" Directory_="ru_Dir" Attributes="0" KeyPath="google.adml_45" Type="0"/>
+    <ROW Component="google.adml_35" ComponentId="{1B19E1E9-CD0B-4F78-BF04-AC8AB56CCD9F}" Directory_="sk_Dir" Attributes="0" KeyPath="google.adml_47" Type="0"/>
+    <ROW Component="google.adml_36" ComponentId="{00E2FB0F-1553-4136-B879-3C44C66AF391}" Directory_="sl_Dir" Attributes="0" KeyPath="google.adml_48" Type="0"/>
+    <ROW Component="google.adml_37" ComponentId="{FEB8DECD-5FA4-43FD-B075-3A44AB50CA52}" Directory_="sr_Dir" Attributes="0" KeyPath="google.adml_49" Type="0"/>
+    <ROW Component="google.adml_38" ComponentId="{867AE260-A4E2-4259-B543-996C73A357CD}" Directory_="sv_Dir" Attributes="0" KeyPath="google.adml_50" Type="0"/>
+    <ROW Component="google.adml_39" ComponentId="{B74C4D5E-52C2-44E5-8601-49CBFBF27229}" Directory_="sw_Dir" Attributes="0" KeyPath="google.adml_51" Type="0"/>
+    <ROW Component="google.adml_4" ComponentId="{247A1617-7220-4969-9847-CFDD2E171132}" Directory_="da_Dir" Attributes="0" KeyPath="google.adml_4" Type="0"/>
+    <ROW Component="google.adml_40" ComponentId="{1C441B91-5630-4BA6-AD6C-790B8AE66106}" Directory_="ta_Dir" Attributes="0" KeyPath="google.adml_52" Type="0"/>
+    <ROW Component="google.adml_41" ComponentId="{8C8F9D61-53D5-4EC0-B364-8AA65FDC228D}" Directory_="te_Dir" Attributes="0" KeyPath="google.adml_53" Type="0"/>
+    <ROW Component="google.adml_42" ComponentId="{84068680-8C25-4A5F-BA1F-5BA1CC7ABF50}" Directory_="th_Dir" Attributes="0" KeyPath="google.adml_54" Type="0"/>
+    <ROW Component="google.adml_43" ComponentId="{79A66576-20A8-46C5-AE70-E0E452A72FA1}" Directory_="tr_Dir" Attributes="0" KeyPath="google.adml_56" Type="0"/>
+    <ROW Component="google.adml_44" ComponentId="{F9658B7A-8675-491E-8643-2AA54C244BF0}" Directory_="uk_Dir" Attributes="0" KeyPath="google.adml_58" Type="0"/>
+    <ROW Component="google.adml_45" ComponentId="{9A1EAD36-40AE-4C24-92CC-B9ED94CAB409}" Directory_="vi_Dir" Attributes="0" KeyPath="google.adml_60" Type="0"/>
+    <ROW Component="google.adml_46" ComponentId="{9E44EC73-8529-42CB-8C1B-7400DE7F22BF}" Directory_="am_Dir" Attributes="0" KeyPath="google.adml_64" Type="0"/>
+    <ROW Component="google.adml_47" ComponentId="{D1317CFE-649F-4A1F-9D00-010303A9C220}" Directory_="ar_Dir" Attributes="0" KeyPath="google.adml_65" Type="0"/>
+    <ROW Component="google.adml_5" ComponentId="{642925E6-357B-4450-B04C-7D60CA63CDC2}" Directory_="de_Dir" Attributes="0" KeyPath="google.adml_5" Type="0"/>
+    <ROW Component="google.adml_6" ComponentId="{53B50162-702F-4E91-9300-DB3301CD7EB8}" Directory_="el_Dir" Attributes="0" KeyPath="google.adml_7" Type="0"/>
+    <ROW Component="google.adml_7" ComponentId="{61A88F14-D8F0-47B4-A5E5-242915328CD3}" Directory_="enGB_Dir" Attributes="0" KeyPath="google.adml_8" Type="0"/>
+    <ROW Component="google.adml_8" ComponentId="{B237FA91-E781-4CA6-BAB4-315B9C22F55C}" Directory_="es_Dir" Attributes="0" KeyPath="google.adml_10" Type="0"/>
+    <ROW Component="google.adml_9" ComponentId="{A159ECCC-879B-46DB-95F7-2E78E56C262B}" Directory_="et_Dir" Attributes="0" KeyPath="google.adml_13" Type="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
-    <ROW Feature="ChromeADMX" Title="ADMX for Chrome" Description="ADMX file for Chrome" Display="3" Level="1" Directory_="APPDIR" Attributes="0"/>
-    <ROW Feature="GUS" Title="ADMX for Google Update Service" Description="ADMX for Google Update Service" Display="5" Level="1" Directory_="APPDIR" Attributes="0"/>
-    <ROW Feature="LBS" Title="Legacy Browser Support" Description="Config Legacy Browser Support" Display="11" Level="1" Directory_="APPDIR" Attributes="0"/>
-    <ROW Feature="Main" Title="Shared ADMX for classification" Description="ADMX for classification (required)" Display="13" Level="1" Directory_="APPDIR" Attributes="16"/>
-    <ROW Feature="PasswordAlert" Title="Password Alert" Description="ADMX for password alert feature" Display="7" Level="1" Directory_="APPDIR" Attributes="0"/>
-    <ROW Feature="UA" Title="Chrome UA Switcher" Description="UA switcher" Display="9" Level="1" Directory_="APPDIR" Attributes="0"/>
-    <ATTRIBUTE name="CurrentFeature" value="Main"/>
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
-    <ROW File="google.adml" Component_="google.adml" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\ko-KR\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_18" Component_="google.adml_1" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\nl-NL\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_19" Component_="google.adml_2" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\pt-BR\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_20" Component_="google.adml_3" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\ru-RU\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_21" Component_="google.adml_4" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\th-TH\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_22" Component_="google.adml_5" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\tr-TR\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_23" Component_="google.adml_6" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\uk-UA\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_24" Component_="google.adml_7" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\vi-VN\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_25" Component_="google.adml_8" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\zh-CN\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_26" Component_="google.adml_9" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\zh-TW\google.adml" SelfReg="false"/>
-    <ROW File="google.admx" Component_="google.admx" FileName="GOOGLE~1.ADM|google.admx" Attributes="0" SourcePath="shared\google.admx" SelfReg="false"/>
-    <ROW File="google.adml_27" Component_="google.adml_10" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\de-DE\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_28" Component_="google.adml_11" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\en-US\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_29" Component_="google.adml_12" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\es-419\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_30" Component_="google.adml_13" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\es-ES\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_31" Component_="google.adml_14" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\fr-FR\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_32" Component_="google.adml_15" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\id-ID\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_33" Component_="google.adml_16" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\it-IT\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_34" Component_="google.adml_17" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\ja-JP\google.adml" SelfReg="false"/>
-    <ROW File="chrome.adml" Component_="chrome.adml" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="ChromeAdmx\ko-KR\chrome.adml" SelfReg="false"/>
-    <ROW File="chrome.adml_18" Component_="chrome.adml_18" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="ChromeAdmx\nl-NL\chrome.adml" SelfReg="false"/>
-    <ROW File="chrome.adml_19" Component_="chrome.adml_19" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="ChromeAdmx\pt-BR\chrome.adml" SelfReg="false"/>
-    <ROW File="chrome.adml_20" Component_="chrome.adml_20" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="ChromeAdmx\ru-RU\chrome.adml" SelfReg="false"/>
-    <ROW File="chrome.adml_21" Component_="chrome.adml_21" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="ChromeAdmx\th-TH\chrome.adml" SelfReg="false"/>
-    <ROW File="chrome.adml_22" Component_="chrome.adml_22" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="ChromeAdmx\tr-TR\chrome.adml" SelfReg="false"/>
-    <ROW File="chrome.adml_23" Component_="chrome.adml_23" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="ChromeAdmx\uk-UA\chrome.adml" SelfReg="false"/>
-    <ROW File="chrome.adml_24" Component_="chrome.adml_24" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="ChromeAdmx\vi-VN\chrome.adml" SelfReg="false"/>
-    <ROW File="chrome.adml_25" Component_="chrome.adml_25" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="ChromeAdmx\zh-CN\chrome.adml" SelfReg="false"/>
-    <ROW File="chrome.adml_26" Component_="chrome.adml_26" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="ChromeAdmx\zh-TW\chrome.adml" SelfReg="false"/>
-    <ROW File="chrome.admx" Component_="chrome.admx" FileName="CHROME~1.ADM|chrome.admx" Attributes="0" SourcePath="ChromeAdmx\chrome.admx" SelfReg="false"/>
-    <ROW File="chrome.adml_27" Component_="chrome.adml_27" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="ChromeAdmx\de-DE\chrome.adml" SelfReg="false"/>
-    <ROW File="chrome.adml_28" Component_="chrome.adml_28" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="ChromeAdmx\en-US\chrome.adml" SelfReg="false"/>
-    <ROW File="chrome.adml_29" Component_="chrome.adml_29" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="ChromeAdmx\es-419\chrome.adml" SelfReg="false"/>
-    <ROW File="chrome.adml_30" Component_="chrome.adml_30" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="ChromeAdmx\es-ES\chrome.adml" SelfReg="false"/>
-    <ROW File="chrome.adml_31" Component_="chrome.adml_31" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="ChromeAdmx\fr-FR\chrome.adml" SelfReg="false"/>
-    <ROW File="chrome.adml_32" Component_="chrome.adml_32" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="ChromeAdmx\id-ID\chrome.adml" SelfReg="false"/>
-    <ROW File="chrome.adml_33" Component_="chrome.adml_33" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="ChromeAdmx\it-IT\chrome.adml" SelfReg="false"/>
-    <ROW File="chrome.adml_34" Component_="chrome.adml_34" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="ChromeAdmx\ja-JP\chrome.adml" SelfReg="false"/>
-    <ROW File="GoogleUpdate.admx" Component_="GoogleUpdate.admx" FileName="GOOGLE~2.ADM|GoogleUpdate.admx" Attributes="0" SourcePath="GoogleUpdateAdmx\GoogleUpdate.admx" SelfReg="false"/>
-    <ROW File="GoogleUpdate.adml" Component_="GoogleUpdate.adml" FileName="GOOGLE~2.ADM|GoogleUpdate.adml" Attributes="0" SourcePath="GoogleUpdateAdmx\en-US\GoogleUpdate.adml" SelfReg="false"/>
-    <ROW File="PasswordAlert.admx" Component_="PasswordAlert.admx" FileName="PASSWO~1.ADM|PasswordAlert.admx" Attributes="0" SourcePath="PassAl\PasswordAlert.admx" SelfReg="false"/>
-    <ROW File="ChromeUASwitcher.admx" Component_="ChromeUASwitcher.admx" FileName="CHROME~2.ADM|ChromeUASwitcher.admx" Attributes="0" SourcePath="UA\ChromeUASwitcher.admx" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.admx" Component_="LegacyBrowserSupport.admx" FileName="LEGACY~1.ADM|LegacyBrowserSupport.admx" Attributes="0" SourcePath="Legacy\LegacyBrowserSupport.admx" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml" Component_="LegacyBrowserSupport.adml" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\sw\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_1" Component_="LegacyBrowserSupport.adml_1" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\ta\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_2" Component_="LegacyBrowserSupport.adml_2" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\te\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_3" Component_="LegacyBrowserSupport.adml_3" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\th\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_4" Component_="LegacyBrowserSupport.adml_4" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\tr\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_5" Component_="LegacyBrowserSupport.adml_5" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\uk\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_6" Component_="LegacyBrowserSupport.adml_6" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\vi\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_7" Component_="LegacyBrowserSupport.adml_7" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\zh-CN\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_8" Component_="LegacyBrowserSupport.adml_8" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\zh-TW\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_9" Component_="LegacyBrowserSupport.adml_9" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\am\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_10" Component_="LegacyBrowserSupport.adml_10" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\ar\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_11" Component_="LegacyBrowserSupport.adml_11" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\bg\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_12" Component_="LegacyBrowserSupport.adml_12" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\bn\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_13" Component_="LegacyBrowserSupport.adml_13" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\ca\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_14" Component_="LegacyBrowserSupport.adml_14" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\cs\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_15" Component_="LegacyBrowserSupport.adml_15" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\da\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_16" Component_="LegacyBrowserSupport.adml_16" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\de\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_17" Component_="LegacyBrowserSupport.adml_17" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\el\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_18" Component_="LegacyBrowserSupport.adml_18" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\en-GB\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_19" Component_="LegacyBrowserSupport.adml_19" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\en-US\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_20" Component_="LegacyBrowserSupport.adml_20" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\es\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_21" Component_="LegacyBrowserSupport.adml_21" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\es-419\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_22" Component_="LegacyBrowserSupport.adml_22" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\et\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_23" Component_="LegacyBrowserSupport.adml_23" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\fa\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_24" Component_="LegacyBrowserSupport.adml_24" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\fi\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_25" Component_="LegacyBrowserSupport.adml_25" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\fil\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_26" Component_="LegacyBrowserSupport.adml_26" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\fr\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_27" Component_="LegacyBrowserSupport.adml_27" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\hi\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_28" Component_="LegacyBrowserSupport.adml_28" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\hr\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_29" Component_="LegacyBrowserSupport.adml_29" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\hu\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_30" Component_="LegacyBrowserSupport.adml_30" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\id\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_31" Component_="LegacyBrowserSupport.adml_31" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\it\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_32" Component_="LegacyBrowserSupport.adml_32" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\iw\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_33" Component_="LegacyBrowserSupport.adml_33" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\ja\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_34" Component_="LegacyBrowserSupport.adml_34" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\ka\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_35" Component_="LegacyBrowserSupport.adml_35" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\kn\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_36" Component_="LegacyBrowserSupport.adml_36" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\ko\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_37" Component_="LegacyBrowserSupport.adml_37" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\lt\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_38" Component_="LegacyBrowserSupport.adml_38" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\lv\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_39" Component_="LegacyBrowserSupport.adml_39" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\ml\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_40" Component_="LegacyBrowserSupport.adml_40" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\mr\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_41" Component_="LegacyBrowserSupport.adml_41" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\ms\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_42" Component_="LegacyBrowserSupport.adml_42" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\nl\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_43" Component_="LegacyBrowserSupport.adml_43" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\no\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_44" Component_="LegacyBrowserSupport.adml_44" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\pl\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_45" Component_="LegacyBrowserSupport.adml_45" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\pt-BR\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_46" Component_="LegacyBrowserSupport.adml_46" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\pt-PT\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_47" Component_="LegacyBrowserSupport.adml_47" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\ro\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_48" Component_="LegacyBrowserSupport.adml_48" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\ru\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_49" Component_="LegacyBrowserSupport.adml_49" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\sk\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_50" Component_="LegacyBrowserSupport.adml_50" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\sl\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_51" Component_="LegacyBrowserSupport.adml_51" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\sr\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="LegacyBrowserSupport.adml_52" Component_="LegacyBrowserSupport.adml_52" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="Legacy\sv\LegacyBrowserSupport.adml" SelfReg="false"/>
-    <ROW File="ChromeUASwitcher.adml" Component_="ChromeUASwitcher.adml" FileName="CHROME~2.ADM|ChromeUASwitcher.adml" Attributes="0" SourcePath="UA\en-US\ChromeUASwitcher.adml" SelfReg="false"/>
-    <ROW File="PasswordAlert.adml" Component_="PasswordAlert.adml" FileName="PASSWO~1.ADM|PasswordAlert.adml" Attributes="0" SourcePath="PassAl\en-US\PasswordAlert.adml" SelfReg="false"/>
-    <ROW File="google.adml_1" Component_="google.adml_18" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\ca\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_2" Component_="google.adml_19" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\cs\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_3" Component_="google.adml_20" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\da\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_4" Component_="google.adml_21" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\de\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_5" Component_="google.adml_22" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\el\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_6" Component_="google.adml_23" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\en-GB\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_7" Component_="google.adml_24" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\es\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_8" Component_="google.adml_25" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\et\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_9" Component_="google.adml_26" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\fa\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_10" Component_="google.adml_27" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\fi\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_11" Component_="google.adml_28" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\fil\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_12" Component_="google.adml_29" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\fr\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_13" Component_="google.adml_30" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\hi\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_14" Component_="google.adml_31" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\hr\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_15" Component_="google.adml_32" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\hu\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_16" Component_="google.adml_33" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\id\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_17" Component_="google.adml_34" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\it\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_35" Component_="google.adml_35" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\iw\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_36" Component_="google.adml_36" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\ja\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_37" Component_="google.adml_37" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\ka\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_38" Component_="google.adml_38" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\kn\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_39" Component_="google.adml_39" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\ko\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_40" Component_="google.adml_40" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\lt\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_41" Component_="google.adml_41" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\lv\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_42" Component_="google.adml_42" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\ml\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_43" Component_="google.adml_43" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\mr\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_44" Component_="google.adml_44" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\ms\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_45" Component_="google.adml_45" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\nl\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_46" Component_="google.adml_46" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\no\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_47" Component_="google.adml_47" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\pl\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_48" Component_="google.adml_48" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\pt-PT\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_49" Component_="google.adml_49" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\ro\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_50" Component_="google.adml_50" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\ru\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_51" Component_="google.adml_51" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\sk\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_52" Component_="google.adml_52" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\sl\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_53" Component_="google.adml_53" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\sr\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_54" Component_="google.adml_54" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\sv\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_55" Component_="google.adml_55" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\sw\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_56" Component_="google.adml_56" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\ta\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_57" Component_="google.adml_57" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\te\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_58" Component_="google.adml_58" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\th\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_59" Component_="google.adml_59" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\tr\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_60" Component_="google.adml_60" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\uk\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_61" Component_="google.adml_61" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\vi\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_62" Component_="google.adml_62" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\am\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_63" Component_="google.adml_63" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\ar\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_64" Component_="google.adml_64" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\bg\google.adml" SelfReg="false"/>
-    <ROW File="google.adml_65" Component_="google.adml_65" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="shared\bn\google.adml" SelfReg="false"/>
+    <ROW File="google.adml" Component_="google.adml" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\bg\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml" Component_="google.adml" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\bg\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_1" Component_="google.adml_1" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\bn\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_1" Component_="google.adml_1" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\bn\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_2" Component_="google.adml_2" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\ca\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_2" Component_="google.adml_2" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\ca\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_3" Component_="google.adml_3" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\cs\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_3" Component_="google.adml_3" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\cs\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_4" Component_="google.adml_4" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\da\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_4" Component_="google.adml_4" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\da\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_5" Component_="google.adml_5" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\de\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_5" Component_="google.adml_5" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\de\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="chrome.adml" Component_="chrome.adml" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="admx\de-DE\chrome.adml" SelfReg="false"/>
+    <ROW File="google.adml_6" Component_="chrome.adml" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\de-DE\google.adml" SelfReg="false"/>
+    <ROW File="google.adml_7" Component_="google.adml_6" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\el\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_6" Component_="google.adml_6" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\el\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_8" Component_="google.adml_7" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\en-GB\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_7" Component_="google.adml_7" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\en-GB\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="chrome.adml_1" Component_="chrome.adml_1" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="admx\en-US\chrome.adml" SelfReg="false"/>
+    <ROW File="ChromeUASwitcher.adml" Component_="chrome.adml_1" FileName="CHROME~2.ADM|ChromeUASwitcher.adml" Attributes="0" SourcePath="admx\en-US\ChromeUASwitcher.adml" SelfReg="false"/>
+    <ROW File="google.adml_9" Component_="chrome.adml_1" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\en-US\google.adml" SelfReg="false"/>
+    <ROW File="GoogleUpdate.adml" Component_="chrome.adml_1" FileName="GOOGLE~2.ADM|GoogleUpdate.adml" Attributes="0" SourcePath="admx\en-US\GoogleUpdate.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_8" Component_="chrome.adml_1" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\en-US\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="PasswordAlert.adml" Component_="chrome.adml_1" FileName="PASSWO~1.ADM|PasswordAlert.adml" Attributes="0" SourcePath="admx\en-US\PasswordAlert.adml" SelfReg="false"/>
+    <ROW File="google.adml_10" Component_="google.adml_8" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\es\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_9" Component_="google.adml_8" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\es\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="chrome.adml_2" Component_="chrome.adml_2" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="admx\es-419\chrome.adml" SelfReg="false"/>
+    <ROW File="google.adml_11" Component_="chrome.adml_2" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\es-419\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_10" Component_="chrome.adml_2" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\es-419\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="chrome.adml_3" Component_="chrome.adml_3" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="admx\es-ES\chrome.adml" SelfReg="false"/>
+    <ROW File="google.adml_12" Component_="chrome.adml_3" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\es-ES\google.adml" SelfReg="false"/>
+    <ROW File="google.adml_13" Component_="google.adml_9" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\et\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_11" Component_="google.adml_9" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\et\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_14" Component_="google.adml_10" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\fa\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_12" Component_="google.adml_10" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\fa\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_15" Component_="google.adml_11" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\fi\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_13" Component_="google.adml_11" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\fi\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_16" Component_="google.adml_12" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\fil\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_14" Component_="google.adml_12" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\fil\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_17" Component_="google.adml_13" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\fr\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_15" Component_="google.adml_13" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\fr\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="chrome.adml_4" Component_="chrome.adml_4" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="admx\fr-FR\chrome.adml" SelfReg="false"/>
+    <ROW File="google.adml_18" Component_="chrome.adml_4" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\fr-FR\google.adml" SelfReg="false"/>
+    <ROW File="google.adml_19" Component_="google.adml_14" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\hi\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_16" Component_="google.adml_14" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\hi\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_20" Component_="google.adml_15" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\hr\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_17" Component_="google.adml_15" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\hr\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_21" Component_="google.adml_16" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\hu\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_18" Component_="google.adml_16" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\hu\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_22" Component_="google.adml_17" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\id\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_19" Component_="google.adml_17" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\id\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="chrome.adml_5" Component_="chrome.adml_5" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="admx\id-ID\chrome.adml" SelfReg="false"/>
+    <ROW File="google.adml_23" Component_="chrome.adml_5" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\id-ID\google.adml" SelfReg="false"/>
+    <ROW File="google.adml_24" Component_="google.adml_18" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\it\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_20" Component_="google.adml_18" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\it\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="chrome.adml_6" Component_="chrome.adml_6" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="admx\it-IT\chrome.adml" SelfReg="false"/>
+    <ROW File="google.adml_25" Component_="chrome.adml_6" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\it-IT\google.adml" SelfReg="false"/>
+    <ROW File="google.adml_26" Component_="google.adml_19" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\iw\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_21" Component_="google.adml_19" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\iw\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_27" Component_="google.adml_20" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\ja\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_22" Component_="google.adml_20" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\ja\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="chrome.adml_7" Component_="chrome.adml_7" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="admx\ja-JP\chrome.adml" SelfReg="false"/>
+    <ROW File="google.adml_28" Component_="chrome.adml_7" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\ja-JP\google.adml" SelfReg="false"/>
+    <ROW File="google.adml_29" Component_="google.adml_21" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\ka\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_23" Component_="google.adml_21" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\ka\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_30" Component_="google.adml_22" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\kn\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_24" Component_="google.adml_22" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\kn\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_31" Component_="google.adml_23" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\ko\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_25" Component_="google.adml_23" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\ko\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="chrome.adml_8" Component_="chrome.adml_8" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="admx\ko-KR\chrome.adml" SelfReg="false"/>
+    <ROW File="google.adml_32" Component_="chrome.adml_8" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\ko-KR\google.adml" SelfReg="false"/>
+    <ROW File="google.adml_33" Component_="google.adml_24" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\lt\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_26" Component_="google.adml_24" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\lt\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_34" Component_="google.adml_25" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\lv\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_27" Component_="google.adml_25" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\lv\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_35" Component_="google.adml_26" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\ml\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_28" Component_="google.adml_26" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\ml\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_36" Component_="google.adml_27" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\mr\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_29" Component_="google.adml_27" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\mr\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_37" Component_="google.adml_28" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\ms\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_30" Component_="google.adml_28" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\ms\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_38" Component_="google.adml_29" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\nl\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_31" Component_="google.adml_29" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\nl\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="chrome.adml_9" Component_="chrome.adml_9" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="admx\nl-NL\chrome.adml" SelfReg="false"/>
+    <ROW File="google.adml_39" Component_="chrome.adml_9" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\nl-NL\google.adml" SelfReg="false"/>
+    <ROW File="google.adml_40" Component_="google.adml_30" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\no\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_32" Component_="google.adml_30" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\no\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_41" Component_="google.adml_31" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\pl\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_33" Component_="google.adml_31" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\pl\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="chrome.adml_10" Component_="chrome.adml_10" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="admx\pt-BR\chrome.adml" SelfReg="false"/>
+    <ROW File="google.adml_42" Component_="chrome.adml_10" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\pt-BR\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_34" Component_="chrome.adml_10" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\pt-BR\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_43" Component_="google.adml_32" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\pt-PT\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_35" Component_="google.adml_32" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\pt-PT\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_44" Component_="google.adml_33" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\ro\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_36" Component_="google.adml_33" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\ro\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_45" Component_="google.adml_34" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\ru\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_37" Component_="google.adml_34" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\ru\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="chrome.adml_11" Component_="chrome.adml_11" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="admx\ru-RU\chrome.adml" SelfReg="false"/>
+    <ROW File="google.adml_46" Component_="chrome.adml_11" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\ru-RU\google.adml" SelfReg="false"/>
+    <ROW File="google.adml_47" Component_="google.adml_35" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\sk\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_38" Component_="google.adml_35" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\sk\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_48" Component_="google.adml_36" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\sl\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_39" Component_="google.adml_36" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\sl\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_49" Component_="google.adml_37" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\sr\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_40" Component_="google.adml_37" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\sr\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_50" Component_="google.adml_38" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\sv\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_41" Component_="google.adml_38" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\sv\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_51" Component_="google.adml_39" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\sw\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_42" Component_="google.adml_39" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\sw\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_52" Component_="google.adml_40" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\ta\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_43" Component_="google.adml_40" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\ta\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_53" Component_="google.adml_41" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\te\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_44" Component_="google.adml_41" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\te\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_54" Component_="google.adml_42" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\th\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_45" Component_="google.adml_42" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\th\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="chrome.adml_12" Component_="chrome.adml_12" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="admx\th-TH\chrome.adml" SelfReg="false"/>
+    <ROW File="google.adml_55" Component_="chrome.adml_12" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\th-TH\google.adml" SelfReg="false"/>
+    <ROW File="google.adml_56" Component_="google.adml_43" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\tr\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_46" Component_="google.adml_43" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\tr\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="chrome.adml_13" Component_="chrome.adml_13" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="admx\tr-TR\chrome.adml" SelfReg="false"/>
+    <ROW File="google.adml_57" Component_="chrome.adml_13" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\tr-TR\google.adml" SelfReg="false"/>
+    <ROW File="google.adml_58" Component_="google.adml_44" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\uk\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_47" Component_="google.adml_44" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\uk\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="chrome.adml_14" Component_="chrome.adml_14" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="admx\uk-UA\chrome.adml" SelfReg="false"/>
+    <ROW File="google.adml_59" Component_="chrome.adml_14" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\uk-UA\google.adml" SelfReg="false"/>
+    <ROW File="google.adml_60" Component_="google.adml_45" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\vi\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_48" Component_="google.adml_45" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\vi\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="chrome.adml_15" Component_="chrome.adml_15" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="admx\vi-VN\chrome.adml" SelfReg="false"/>
+    <ROW File="google.adml_61" Component_="chrome.adml_15" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\vi-VN\google.adml" SelfReg="false"/>
+    <ROW File="chrome.adml_16" Component_="chrome.adml_16" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="admx\zh-CN\chrome.adml" SelfReg="false"/>
+    <ROW File="google.adml_62" Component_="chrome.adml_16" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\zh-CN\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_49" Component_="chrome.adml_16" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\zh-CN\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="chrome.adml_17" Component_="chrome.adml_17" FileName="CHROME~1.ADM|chrome.adml" Attributes="0" SourcePath="admx\zh-TW\chrome.adml" SelfReg="false"/>
+    <ROW File="google.adml_63" Component_="chrome.adml_17" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\zh-TW\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_50" Component_="chrome.adml_17" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\zh-TW\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="chrome.admx" Component_="chrome.admx" FileName="CHROME~1.ADM|chrome.admx" Attributes="0" SourcePath="admx\chrome.admx" SelfReg="false"/>
+    <ROW File="ChromeUASwitcher.admx" Component_="chrome.admx" FileName="CHROME~2.ADM|ChromeUASwitcher.admx" Attributes="0" SourcePath="admx\ChromeUASwitcher.admx" SelfReg="false"/>
+    <ROW File="google.admx" Component_="chrome.admx" FileName="GOOGLE~1.ADM|google.admx" Attributes="0" SourcePath="admx\google.admx" SelfReg="false"/>
+    <ROW File="GoogleUpdate.admx" Component_="chrome.admx" FileName="GOOGLE~2.ADM|GoogleUpdate.admx" Attributes="0" SourcePath="admx\GoogleUpdate.admx" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.admx" Component_="chrome.admx" FileName="LEGACY~1.ADM|LegacyBrowserSupport.admx" Attributes="0" SourcePath="admx\LegacyBrowserSupport.admx" SelfReg="false"/>
+    <ROW File="PasswordAlert.admx" Component_="chrome.admx" FileName="PASSWO~1.ADM|PasswordAlert.admx" Attributes="0" SourcePath="admx\PasswordAlert.admx" SelfReg="false"/>
+    <ROW File="google.adml_64" Component_="google.adml_46" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\am\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_51" Component_="google.adml_46" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\am\LegacyBrowserSupport.adml" SelfReg="false"/>
+    <ROW File="google.adml_65" Component_="google.adml_47" FileName="GOOGLE~1.ADM|google.adml" Attributes="0" SourcePath="admx\ar\google.adml" SelfReg="false"/>
+    <ROW File="LegacyBrowserSupport.adml_52" Component_="google.adml_47" FileName="LEGACY~1.ADM|LegacyBrowserSupport.adml" Attributes="0" SourcePath="admx\ar\LegacyBrowserSupport.adml" SelfReg="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
     <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
-    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="package" PackageFileName="chrome-admx-[|ProductVersion]" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="package" PackageFileName="chrome-admx-[|ProductVersion]" Languages="en" InstallationType="4" SummInfoMetadata="Page Count:450" UseLargeSchema="true"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
     <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
     <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
   </COMPONENT>
-  <COMPONENT cid="caphyon.advinst.msicomp.DigCertStoreComponent">
-    <ROW TimeStampUrl="http://timestamp.digicert.com" SignerDescription="[|ProductName]" SignOptions="0" SignTool="0" UseSha256="1" Subject="CN=TestCert_2020-3-23_23-13-14"/>
-  </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
     <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
     <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
     <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
-    <ROW Fragment="OptionalFeatsDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\OptionalFeatsDlg.aip"/>
     <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
     <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
     <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
     <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
     <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
     <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
@@ -438,14 +354,16 @@
     <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
-    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="OptionalFeatsDlg" Condition="AI_INSTALL" Ordering="1"/>
-    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
-    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="OptionalFeatsDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
     <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
     <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
     <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
-    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
-    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="204"/>
     <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
     <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
     <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
@@ -457,9 +375,7 @@
     <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
     <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
     <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
-    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="205"/>
-    <ROW Dialog_="OptionalFeatsDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="1"/>
-    <ROW Dialog_="OptionalFeatsDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
     <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
@@ -471,6 +387,7 @@
     <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
     <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
     <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
     <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
     <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
     <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
@@ -481,168 +398,90 @@
     <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
-    <ROW Feature_="ChromeADMX" Component_="APPDIR"/>
-    <ROW Feature_="ChromeADMX" Component_="ProductInformation"/>
-    <ROW Feature_="ChromeADMX" Component_="chrome.adml"/>
-    <ROW Feature_="Main" Component_="google.adml"/>
-    <ROW Feature_="Main" Component_="google.adml_1"/>
-    <ROW Feature_="Main" Component_="google.adml_2"/>
-    <ROW Feature_="Main" Component_="google.adml_3"/>
-    <ROW Feature_="Main" Component_="google.adml_4"/>
-    <ROW Feature_="Main" Component_="google.adml_5"/>
-    <ROW Feature_="Main" Component_="google.adml_6"/>
-    <ROW Feature_="Main" Component_="google.adml_7"/>
-    <ROW Feature_="Main" Component_="google.adml_8"/>
-    <ROW Feature_="Main" Component_="google.adml_9"/>
-    <ROW Feature_="Main" Component_="google.admx"/>
-    <ROW Feature_="Main" Component_="google.adml_10"/>
-    <ROW Feature_="Main" Component_="google.adml_11"/>
-    <ROW Feature_="Main" Component_="google.adml_12"/>
-    <ROW Feature_="Main" Component_="google.adml_13"/>
-    <ROW Feature_="Main" Component_="google.adml_14"/>
-    <ROW Feature_="Main" Component_="google.adml_15"/>
-    <ROW Feature_="Main" Component_="google.adml_16"/>
-    <ROW Feature_="Main" Component_="google.adml_17"/>
-    <ROW Feature_="ChromeADMX" Component_="chrome.adml_18"/>
-    <ROW Feature_="ChromeADMX" Component_="chrome.adml_19"/>
-    <ROW Feature_="ChromeADMX" Component_="chrome.adml_20"/>
-    <ROW Feature_="ChromeADMX" Component_="chrome.adml_21"/>
-    <ROW Feature_="ChromeADMX" Component_="chrome.adml_22"/>
-    <ROW Feature_="ChromeADMX" Component_="chrome.adml_23"/>
-    <ROW Feature_="ChromeADMX" Component_="chrome.adml_24"/>
-    <ROW Feature_="ChromeADMX" Component_="chrome.adml_25"/>
-    <ROW Feature_="ChromeADMX" Component_="chrome.adml_26"/>
-    <ROW Feature_="ChromeADMX" Component_="chrome.admx"/>
-    <ROW Feature_="ChromeADMX" Component_="chrome.adml_27"/>
-    <ROW Feature_="ChromeADMX" Component_="chrome.adml_28"/>
-    <ROW Feature_="ChromeADMX" Component_="chrome.adml_29"/>
-    <ROW Feature_="ChromeADMX" Component_="chrome.adml_30"/>
-    <ROW Feature_="ChromeADMX" Component_="chrome.adml_31"/>
-    <ROW Feature_="ChromeADMX" Component_="chrome.adml_32"/>
-    <ROW Feature_="ChromeADMX" Component_="chrome.adml_33"/>
-    <ROW Feature_="ChromeADMX" Component_="chrome.adml_34"/>
-    <ROW Feature_="GUS" Component_="GoogleUpdate.admx"/>
-    <ROW Feature_="GUS" Component_="GoogleUpdate.adml"/>
-    <ROW Feature_="PasswordAlert" Component_="PasswordAlert.admx"/>
-    <ROW Feature_="UA" Component_="ChromeUASwitcher.admx"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.admx"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_1"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_2"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_3"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_4"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_5"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_6"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_7"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_8"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_9"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_10"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_11"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_12"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_13"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_14"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_15"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_16"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_17"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_18"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_19"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_20"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_21"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_22"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_23"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_24"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_25"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_26"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_27"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_28"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_29"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_30"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_31"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_32"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_33"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_34"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_35"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_36"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_37"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_38"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_39"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_40"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_41"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_42"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_43"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_44"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_45"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_46"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_47"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_48"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_49"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_50"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_51"/>
-    <ROW Feature_="LBS" Component_="LegacyBrowserSupport.adml_52"/>
-    <ROW Feature_="UA" Component_="ChromeUASwitcher.adml"/>
-    <ROW Feature_="PasswordAlert" Component_="PasswordAlert.adml"/>
-    <ROW Feature_="Main" Component_="google.adml_18"/>
-    <ROW Feature_="Main" Component_="google.adml_19"/>
-    <ROW Feature_="Main" Component_="google.adml_20"/>
-    <ROW Feature_="Main" Component_="google.adml_21"/>
-    <ROW Feature_="Main" Component_="google.adml_22"/>
-    <ROW Feature_="Main" Component_="google.adml_23"/>
-    <ROW Feature_="Main" Component_="google.adml_24"/>
-    <ROW Feature_="Main" Component_="google.adml_25"/>
-    <ROW Feature_="Main" Component_="google.adml_26"/>
-    <ROW Feature_="Main" Component_="google.adml_27"/>
-    <ROW Feature_="Main" Component_="google.adml_28"/>
-    <ROW Feature_="Main" Component_="google.adml_29"/>
-    <ROW Feature_="Main" Component_="google.adml_30"/>
-    <ROW Feature_="Main" Component_="google.adml_31"/>
-    <ROW Feature_="Main" Component_="google.adml_32"/>
-    <ROW Feature_="Main" Component_="google.adml_33"/>
-    <ROW Feature_="Main" Component_="google.adml_34"/>
-    <ROW Feature_="Main" Component_="google.adml_35"/>
-    <ROW Feature_="Main" Component_="google.adml_36"/>
-    <ROW Feature_="Main" Component_="google.adml_37"/>
-    <ROW Feature_="Main" Component_="google.adml_38"/>
-    <ROW Feature_="Main" Component_="google.adml_39"/>
-    <ROW Feature_="Main" Component_="google.adml_40"/>
-    <ROW Feature_="Main" Component_="google.adml_41"/>
-    <ROW Feature_="Main" Component_="google.adml_42"/>
-    <ROW Feature_="Main" Component_="google.adml_43"/>
-    <ROW Feature_="Main" Component_="google.adml_44"/>
-    <ROW Feature_="Main" Component_="google.adml_45"/>
-    <ROW Feature_="Main" Component_="google.adml_46"/>
-    <ROW Feature_="Main" Component_="google.adml_47"/>
-    <ROW Feature_="Main" Component_="google.adml_48"/>
-    <ROW Feature_="Main" Component_="google.adml_49"/>
-    <ROW Feature_="Main" Component_="google.adml_50"/>
-    <ROW Feature_="Main" Component_="google.adml_51"/>
-    <ROW Feature_="Main" Component_="google.adml_52"/>
-    <ROW Feature_="Main" Component_="google.adml_53"/>
-    <ROW Feature_="Main" Component_="google.adml_54"/>
-    <ROW Feature_="Main" Component_="google.adml_55"/>
-    <ROW Feature_="Main" Component_="google.adml_56"/>
-    <ROW Feature_="Main" Component_="google.adml_57"/>
-    <ROW Feature_="Main" Component_="google.adml_58"/>
-    <ROW Feature_="Main" Component_="google.adml_59"/>
-    <ROW Feature_="Main" Component_="google.adml_60"/>
-    <ROW Feature_="Main" Component_="google.adml_61"/>
-    <ROW Feature_="Main" Component_="google.adml_62"/>
-    <ROW Feature_="Main" Component_="google.adml_63"/>
-    <ROW Feature_="Main" Component_="google.adml_64"/>
-    <ROW Feature_="Main" Component_="google.adml_65"/>
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="google.adml"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_1"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_2"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_3"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_4"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_5"/>
+    <ROW Feature_="MainFeature" Component_="chrome.adml"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_6"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_7"/>
+    <ROW Feature_="MainFeature" Component_="chrome.adml_1"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_8"/>
+    <ROW Feature_="MainFeature" Component_="chrome.adml_2"/>
+    <ROW Feature_="MainFeature" Component_="chrome.adml_3"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_9"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_10"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_11"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_12"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_13"/>
+    <ROW Feature_="MainFeature" Component_="chrome.adml_4"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_14"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_15"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_16"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_17"/>
+    <ROW Feature_="MainFeature" Component_="chrome.adml_5"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_18"/>
+    <ROW Feature_="MainFeature" Component_="chrome.adml_6"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_19"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_20"/>
+    <ROW Feature_="MainFeature" Component_="chrome.adml_7"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_21"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_22"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_23"/>
+    <ROW Feature_="MainFeature" Component_="chrome.adml_8"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_24"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_25"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_26"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_27"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_28"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_29"/>
+    <ROW Feature_="MainFeature" Component_="chrome.adml_9"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_30"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_31"/>
+    <ROW Feature_="MainFeature" Component_="chrome.adml_10"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_32"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_33"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_34"/>
+    <ROW Feature_="MainFeature" Component_="chrome.adml_11"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_35"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_36"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_37"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_38"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_39"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_40"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_41"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_42"/>
+    <ROW Feature_="MainFeature" Component_="chrome.adml_12"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_43"/>
+    <ROW Feature_="MainFeature" Component_="chrome.adml_13"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_44"/>
+    <ROW Feature_="MainFeature" Component_="chrome.adml_14"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_45"/>
+    <ROW Feature_="MainFeature" Component_="chrome.adml_15"/>
+    <ROW Feature_="MainFeature" Component_="chrome.adml_16"/>
+    <ROW Feature_="MainFeature" Component_="chrome.adml_17"/>
+    <ROW Feature_="MainFeature" Component_="chrome.admx"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_46"/>
+    <ROW Feature_="MainFeature" Component_="google.adml_47"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
-    <ROW Name="shell32.exe" SourcePath="C:\Windows\System32\shell32.dll" Index="265"/>
+    <ROW Name="shell32_1.exe" SourcePath="C:\Windows\System32\shell32.dll" Index="265"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
     <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
-    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="747"/>
     <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
     <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1397"/>
     <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
     <ROW Action="AI_EnableDebugLog" Sequence="51"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
-    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="747"/>
     <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
     <ROW Action="AI_DpiContentScale" Sequence="52"/>
     <ROW Action="AI_EnableDebugLog" Sequence="51"/>
@@ -656,7 +495,10 @@
     <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
     <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
+    <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
     <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
